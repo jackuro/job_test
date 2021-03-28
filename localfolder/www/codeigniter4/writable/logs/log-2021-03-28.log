@@ -1,0 +1,96 @@
+ERROR - 2021-03-28 14:58:34 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-03-28 14:58:34 --> Unable to connect to the database.
+#0 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter4/app/Controllers/BranchCrud.php(11): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BranchCrud->index()
+#6 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#7 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-03-28 14:59:22 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-03-28 14:59:22 --> Unable to connect to the database.
+#0 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter4/app/Controllers/BranchCrud.php(11): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BranchCrud->index()
+#6 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#7 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-03-28 14:59:55 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-03-28 14:59:55 --> Unable to connect to the database.
+#0 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter4/app/Controllers/BranchCrud.php(11): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BranchCrud->index()
+#6 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#7 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-03-28 15:02:20 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-03-28 15:02:20 --> Unable to connect to the database.
+#0 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter4/app/Controllers/BranchCrud.php(11): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BranchCrud->index()
+#6 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#7 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-03-28 15:02:32 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-03-28 15:02:32 --> Unable to connect to the database.
+#0 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter4/app/Controllers/BranchCrud.php(11): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BranchCrud->index()
+#6 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#7 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-03-28 15:03:20 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-03-28 15:03:20 --> Unable to connect to the database.
+#0 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter4/app/Controllers/BranchCrud.php(11): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BranchCrud->index()
+#6 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#7 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-03-28 15:05:34 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-03-28 15:05:34 --> Unable to connect to the database.
+#0 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter4/app/Controllers/BranchCrud.php(11): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BranchCrud->index()
+#6 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#7 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-03-28 15:06:19 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-03-28 15:06:19 --> Unable to connect to the database.
+#0 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter4/app/Controllers/BranchCrud.php(11): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BranchCrud->index()
+#6 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#7 /var/www/html/codeigniter4/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

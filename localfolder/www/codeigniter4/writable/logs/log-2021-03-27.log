@@ -1,0 +1,172 @@
+CRITICAL - 2021-03-27 06:38:01 --> syntax error, unexpected token "echo"
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('edit_client', Array, true)
+#2 C:\xampp\htdocs\chessable_bank\app\Controllers\ClientCrud.php(47): view('edit_client', Array)
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\ClientCrud->singleClient('30')
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientCrud))
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-03-27 06:38:12 --> syntax error, unexpected token "echo"
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('edit_client', Array, true)
+#2 C:\xampp\htdocs\chessable_bank\app\Controllers\ClientCrud.php(47): view('edit_client', Array)
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\ClientCrud->singleClient('31')
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientCrud))
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2021-03-27 06:43:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`chess_bank`.`client`, CONSTRAINT `client_ibfk_1` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`id`)) in C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM `br...')
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `br...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `br...')
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query('DELETE FROM `br...', Array, false)
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\BaseModel.php(1009): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\chessable_bank\app\Controllers\BranchCrud.php(54): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\BranchCrud->delete('11')
+#8 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-03-27 06:44:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`chess_bank`.`client`, CONSTRAINT `client_ibfk_1` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`id`)) in C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM `br...')
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `br...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `br...')
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query('DELETE FROM `br...', Array, false)
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\BaseModel.php(1009): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\chessable_bank\app\Controllers\BranchCrud.php(54): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\BranchCrud->delete('11')
+#8 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-03-27 06:44:04 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`chess_bank`.`client`, CONSTRAINT `client_ibfk_1` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`id`)) in C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM `br...')
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `br...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `br...')
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query('DELETE FROM `br...', Array, false)
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\BaseModel.php(1009): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\chessable_bank\app\Controllers\BranchCrud.php(54): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\BranchCrud->delete('11')
+#8 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-03-27 06:44:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`chess_bank`.`client`, CONSTRAINT `client_ibfk_1` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`id`)) in C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM `br...')
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `br...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `br...')
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query('DELETE FROM `br...', Array, false)
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\BaseModel.php(1009): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\chessable_bank\app\Controllers\BranchCrud.php(54): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\BranchCrud->delete('11')
+#8 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-03-27 06:44:10 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`chess_bank`.`client`, CONSTRAINT `client_ibfk_1` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`id`)) in C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM `br...')
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `br...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `br...')
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query('DELETE FROM `br...', Array, false)
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\BaseModel.php(1009): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\chessable_bank\app\Controllers\BranchCrud.php(54): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\BranchCrud->delete('11')
+#8 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-03-27 06:44:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`chess_bank`.`client`, CONSTRAINT `client_ibfk_1` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`id`)) in C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM `br...')
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `br...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `br...')
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query('DELETE FROM `br...', Array, false)
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\BaseModel.php(1009): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\chessable_bank\app\Controllers\BranchCrud.php(54): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\BranchCrud->delete('13')
+#8 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-03-27 06:44:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`chess_bank`.`client`, CONSTRAINT `client_ibfk_1` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`id`)) in C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM `br...')
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `br...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `br...')
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query('DELETE FROM `br...', Array, false)
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\BaseModel.php(1009): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\chessable_bank\app\Controllers\BranchCrud.php(54): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\BranchCrud->delete('14')
+#8 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-03-27 06:49:32 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`chess_bank`.`client`, CONSTRAINT `client_ibfk_1` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`id`)) in C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM `br...')
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `br...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `br...')
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query('DELETE FROM `br...', Array, false)
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\BaseModel.php(1009): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\chessable_bank\app\Controllers\BranchCrud.php(54): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\BranchCrud->delete('13')
+#8 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BranchCrud))
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-03-27 07:00:39 --> Undefined variable $clients
+#0 C:\xampp\htdocs\chessable_bank\app\Views\report_view.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('report_view', Array, true)
+#4 C:\xampp\htdocs\chessable_bank\app\Controllers\ReportCrud.php(16): view('report_view', Array)
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\ReportCrud->index()
+#6 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportCrud))
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-27 07:02:38 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('report_view', Array, true)
+#2 C:\xampp\htdocs\chessable_bank\app\Controllers\ReportCrud.php(16): view('report_view', Array)
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\ReportCrud->index()
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportCrud))
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-03-27 07:02:39 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('report_view', Array, true)
+#2 C:\xampp\htdocs\chessable_bank\app\Controllers\ReportCrud.php(16): view('report_view', Array)
+#3 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\ReportCrud->index()
+#4 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportCrud))
+#5 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\chessable_bank\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\chessable_bank\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
